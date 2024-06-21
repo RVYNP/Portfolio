@@ -15,6 +15,26 @@ h1{
 display: inline;
 }
 
+
+#body-slide1 {
+background-color: aqua;
+display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
@@ -59,4 +79,41 @@ display: inline;
     color: white;
     font-size: 48px;
   }
+  .selector-for-some-widget {
+    box-sizing: content-box;
+  }
   
+
+
+.hero {
+display: inline;
+box-sizing: border-box;
+ 
+}
+  .pf1 {
+  position: relative;
+  color:#ddd;
+  max-width: 100%;
+  height: auto;
+  width: 900px;
+  box-sizing: border-box;
+  }
+  
+  .p1-header {
+    position: absolute;
+    bottom: 700px;
+    font-size: 144px;
+    left: 14px;
+  }
+
+  .p1-body {
+    position: absolute;
+    bottom: 675px;
+    display: block;
+    overflow: auto;
+    left: 14px;
+    }
+  
+  .p1-subheader {
+    
+  }
