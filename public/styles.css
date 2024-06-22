@@ -56,6 +56,7 @@ display: inline;
     text-decoration: none;
     font-size: 17px;
     display: block;
+    width: 100%;
   }
   
   /* Style the hamburger menu */
@@ -85,45 +86,132 @@ display: inline;
   
 
 
+
+
+
+  .hero-mb {
+  display: none;
+}
+
 .hero {
-display: inline;
+display: none;
 box-sizing: border-box;
 
 }
   .pf1 {
-  position: relative;
-  color:#ddd;
-  max-width: 100%;
-  height: auto;
-  width: 900px;
-  box-sizing: border-box;
-  }
-  
-  .p1-header {
-    position: absolute;
-    bottom: 700px;
-    font-size: 144px;
-    left: 14px;
-  }
+ width: 100%;
 
-  .p1-body {
-    position: absolute;
-    bottom: 675px;
-    display: block;
-    overflow: auto;
-    left: 14px;
-    }
+  }
+  .p1-type-container {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    margin: 10px 0 ;
+  }
   
-  .p1-subheader {
+.p1-subheader{
+  width: 100%;
+  padding: 0px 0px 5px;
+  font-size: 24px;
+  text-align: left;
+  
+  }
+  
+  .p1-header{
+    width: 100%;
+    padding: 0px 0px 5px;
     font-size: 48px;
-    position: absolute;
-    bottom: 850px;
-    left: 14px;
+    text-align: left;
+    }
+    
+    .p1-body{
+      width: 100%;
+      padding: 0px 0px 5px;
+      font-size: 16px;
+      text-align: left;
+      }
+      
+    .view-cta {
+      width: 100%;
+      padding: 0px 0px 5px;
+      font-size: 18px;
+       text-align: right;
+    }
+    
+      
+  
+      @media only screen and (max-width: 767px) { 
+        .hero-mb {
+          display: block;
+          width: 100%}
+          .p1-type-container {
+            width: 100%;
+           
 
-  }
-.view-work{
-  font-size: 18px;
-  bottom: 45px;
-  position: relative;
-  left: 900px
-}
+          }
+
+    }
+
+
+      @media only screen and (min-width:768px) {
+      .hero {
+        display: block;
+        width: 100%;
+        padding: 30px;
+      }
+
+      .p1-type-container {
+        width: 600px;
+
+      }
+
+      .p1-subheader{
+        padding: 0px 0px 5px;
+        
+        }
+        
+        .p1-header{
+          padding: 0px 0px 5px;
+          
+          }
+          
+          .p1-body{
+        
+            padding: 0px 0px 5px;          
+            }
+            
+          .view-cta {
+            padding: 0px 0px 5px;      
+
+
+          }
+
+
+          .mb-hero {
+            display: none;
+            box-sizing: border-box; }
+
+    }
+
+  
+    @media only screen and (min-width:1000px) {
+
+      .p1-type-container {
+        width: 1000px;
+      }
+      .p1-type-container {
+        width: 600px;
+        box-sizing: border-box;
+
+      }
+
+
+
+      .mb-hero {
+        display: none;
+        box-sizing: border-box; }
+
+
+
+
+    }
