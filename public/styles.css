@@ -79,13 +79,13 @@ align-content: space-around;
 
 
 .topnav span { 
-  height: 5px;
   width: 100%; 
   background-color:white;
   border-radius: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 5px;
   transform: translate(-50%, -50%);
   transition: .3s ease;
 }
@@ -138,7 +138,35 @@ align-content: space-around;
 .content-holder {
   padding-top: 10em;
 }
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap)
+  --gap: 20px;
+  border: 0;
+}
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  --gap: 20px;
+  list-style: none;
+  background-color: rgb(18, 17, 17);
+  color: white;
+  animation: scroll 20s linear infinite;
+  padding: 14em;
+  max-height: 450px;
+  
 
+}
+@keyframes scroll {
+  from {
+    transform: translateX(calc(-100% - var(--gap)));
+
+  }}
 
 .hero-mb {
   display: none;
