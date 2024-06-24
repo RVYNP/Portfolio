@@ -197,7 +197,8 @@ box-sizing: border-box;
   .p1-type-container {
     width: 100%;
     text-align: left;
-    padding: 0px 32px 0px 32px;
+    padding: 0px 32px 32px 32px;
+    margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -208,7 +209,7 @@ box-sizing: border-box;
   width: 100%;
   max-width: 5em;
   padding: 0px 0px 0px;
-  font-size: 24px;
+  font-size: 18px;
   text-align: left;
 
   
@@ -221,8 +222,8 @@ box-sizing: border-box;
     font-size: 36px;
     text-align: left;
     text-wrap:balance;
-    font-weight: 600;
     line-height: 32px;
+    font-weight: 600;
     
     }
     
@@ -232,13 +233,25 @@ box-sizing: border-box;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      font-size: 18px;
+      margin-left: 2em;
       }
       
     .view-cta {
       width: 100%;
-      padding: 0px 0px 5px;
+      padding: 0px 0px 0px;
       font-size: 18px;
-       text-align: right;
+      text-align:end
+    }
+    
+    .view-cta-btn {
+      color: rgb(18, 17, 17);
+      text-decoration: underline;
+      background-color: white;
+      border: 0;
+      font-size: 1em;
+    
+;
     }
     
       
@@ -304,10 +317,8 @@ box-sizing: border-box;
       }
       .p1-type-container {
         width: 1000px;
-        box-sizing: border-box;
-
+        box-sizing:
       }
-
 
 
       .mb-hero {
