@@ -4,7 +4,8 @@ background-color: whitesmoke
 
 
 * {
-font-family: Arial, Helvetica, sans-serif
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
 }
 
 .slide-one { 
@@ -121,7 +122,6 @@ align-content: space-around;
 
 }
 
-
 .navname  { 
 
   display: flex;
@@ -137,14 +137,20 @@ align-content: space-around;
 
 .content-holder {
   padding-top: 10em;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .marquee {
   display: flex;
   overflow: hidden;
   user-select: none;
-  gap: var(--gap)
+  gap: var(--gap);
   --gap: 20px;
-  border: 0;
+  border-top: 6px rgb(18,17,17) solid;
+  border-bottom: 6px rgb(18,17,17) solid;
+  background-color:  rgb(18, 17, 17);
+  width: 100%;
 }
 .marquee-content {
   flex-shrink: 0;
@@ -155,10 +161,12 @@ align-content: space-around;
   --gap: 20px;
   list-style: none;
   background-color: rgb(18, 17, 17);
-  color: white;
+  color:  white;
   animation: scroll 20s linear infinite;
-  padding: 14em;
+  padding: 2em;
   max-height: 450px;
+  font-weight: 600;
+  font-size: 1em;
   
 
 }
@@ -181,36 +189,49 @@ box-sizing: border-box;
 }
   .pf1 {
  width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+
   }
   .p1-type-container {
     width: 100%;
     text-align: left;
-    padding: 0px;
-    margin: 10px 0 ;
+    padding: 0px 32px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
   }
   
 .p1-subheader{
   width: 100%;
-  padding: 0px 0px 5px;
+  max-width: 5em;
+  padding: 0px 0px 0px;
   font-size: 24px;
   text-align: left;
+
   
   }
   
   .p1-header{
     width: 100%;
-    padding: 0px 0px 5px;
-    font-size: 48px;
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px ;
+    font-size: 36px;
     text-align: left;
+    text-wrap:balance;
+    font-weight: 600;
+    line-height: 32px;
+    
     }
     
     .p1-body{
-      width: 100%;
-      padding: 0px 0px 5px;
-      font-size: 16px;
+      width: auto;
       text-align: left;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       }
       
     .view-cta {
@@ -248,22 +269,22 @@ box-sizing: border-box;
       }
 
       .p1-subheader{
-        padding: 0px 0px 5px;
+        padding: 0px 0px 0px;
         
         }
         
         .p1-header{
-          padding: 0px 0px 5px;
+          padding: 0px 0px 0px;
           
           }
           
           .p1-body{
         
-            padding: 0px 0px 5px;          
+            padding: 0px 0px 0px;          
             }
             
           .view-cta {
-            padding: 0px 0px 5px;      
+            padding: 0px 0px 0px;      
 
 
           }
@@ -282,7 +303,7 @@ box-sizing: border-box;
         width: 1000px;
       }
       .p1-type-container {
-        width: 600px;
+        width: 1000px;
         box-sizing: border-box;
 
       }
